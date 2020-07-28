@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    box-sizing: border-box;
+    text-rendering: geometricPrecision
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    // chú ý thứ tự tab-land,tab-port
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+    
+}
+body{
+    text-rendering: optimizeSpeed;
+    font-family: 'Roboto-Regular', sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+
+/*
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/

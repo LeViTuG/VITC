@@ -1,0 +1,45 @@
+@mixin respond ($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {@content};
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 900px) {@content};
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 1180px) {@content};
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 1500px) {@content};
+    }
+}
+
+
+
+@mixin createBox($width, $height, $bRadius, $bgColor, $margin){
+    max-width: $width;
+    height: $height;
+    border-radius: $bRadius;
+    background-color: $bgColor;
+    margin: $margin;
+    transition: .3s all ease-in-out;
+  }
+
+
+$color--black: #0e0e0e;
+$color--dark:#05042c;
+$color--main:#06c1d4;
+$color--white: #fff;
+$color--grey: #7a8088;
+$color--dark_gray:#171c27;
+$color--dark_blue: #242368;
+$color--red: #d53b2a;
+$color--oranger: #ed6e33;
+$color--green: #23a455;
+$color--gray700: #272e3c;
+$color--gray600: #414956;
+$color--gray500: #7a8088;
+$color--gray200: #d2d7e1;
+$color--fb:#4054b2;
+$color--cyan50: #d1f5f9;
+$hoverBgColor : #503bff;
+$hoverBgColor2: #8293ff;
