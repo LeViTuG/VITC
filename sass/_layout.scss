@@ -65,9 +65,9 @@ header{
                 outline: 0;
                 border: 0;
                 display: none;
-                font-size: 1em;
+                font-size: 1.5rem;
                 border-radius: 2rem;
-                padding: 0 2rem;
+                padding: 0 1rem;
                 
             }
             &:hover{
@@ -90,8 +90,6 @@ header{
 }
 
 
-
-  /* Nav Bar ----------------------------------------------------------------------*/
 
 
 
@@ -154,7 +152,7 @@ header{
 .controls {
     position: relative;
     text-align: center;
-    z-index: 1000;
+    z-index: 99;
     bottom: 5%;
     ul {
         list-style: none;
@@ -199,53 +197,37 @@ header{
     }
 }
 // Chương tình đào tạo------------------------------------------------------------------
-.grid_container{
-    display: grid;
-    width: 100%;
-    grid-gap: 0;
-    padding: 5rem;
-    padding-top: 3rem;
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
-    grid-template-rows: 200px 200px;
-    @include respond(phone){
-        padding: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-template-rows: 100px 100px 100px 100px;
-    }
-    .box{
-        text-align: center;
-        padding: 1rem;
-        .nganh{
-            text-decoration: none;
-            .title-sub{
-                color: $color--white;
-                font-size: 1.4rem;
-                font-weight: 500;
-                .bieu-tuong{
-                    width: 120px;
-                    height: 120px;
-                    vertical-align: middle;
-                    margin-top: 2rem;
-                    @include respond(phone){
-                        width: 50px;
-                        height: 50px;
-                        margin-top:0;
-                    }
-                }
+.listedu{
+    margin: 3rem;
+}
+.box{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    .nganh{
+        text-decoration: none;
+        .title-sub{
+            color: $color--white;
+            font-size: 1.4rem;
+            font-weight: 500;
+            .bieu-tuong{
+                width: 60%;
+                height: 60%;
+                vertical-align: middle;
+                margin-top: 2rem;
+                
             }
         }
-        &:hover{
-            opacity: 0.8;
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-            -moz-animation: fadein 2s; /* Firefox < 16 */
-            -ms-animation: fadein 2s; /* Internet Explorer */
-            -o-animation: fadein 2s; /* Opera < 12.1 */
-                animation: fadein 2s;
-        }
+    }
+    &:hover{
+        opacity: 0.8;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
     }
 }
-
 
 // Tin tức HĐ=============================================================
 
@@ -461,7 +443,6 @@ header{
         }
     }
 }
-
 
 
 // Footer========================================================================
@@ -702,9 +683,9 @@ to   { opacity: 1; }
 	border-color: transparent;
 }
 .nav-link{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 	color: $color--cyan50 !important;
-	font-weight: 400;
+	font-weight: 500;
     transition: all 200ms linear;
 }
 .nav-item:hover .nav-link{
@@ -783,11 +764,12 @@ to   { opacity: 1; }
 	color: #212121;
 	border-radius: 2px;
     transition: all 200ms linear;
+    font-size: 1.4rem;
 }
 .dropdown-item:hover, 
 .dropdown-item:focus {
-	color: #fff;
-	background-color: $color--main;
+	color: #fff ;
+	background-color: $color--main !important;
 }
 
 
@@ -811,7 +793,6 @@ to   { opacity: 1; }
 		content: "";
 		border: none;
 		background-color: #000;
-		// vertical-align: 0;
 	}
 	.dropdown-toggle::after {
 		position: absolute;
@@ -823,7 +804,6 @@ to   { opacity: 1; }
 		content: "";
 		border: none;
 		background-color: #000;
-		// vertical-align: 0;
 		transition: all 200ms linear;
 	}
 	.dropdown-toggle[aria-expanded="true"]::after{
