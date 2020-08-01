@@ -198,7 +198,7 @@ header{
 }
 // Chương tình đào tạo------------------------------------------------------------------
 .listedu{
-    margin: 3rem;
+    margin: 3rem 0;
 }
 .box{
     text-align: center;
@@ -235,11 +235,15 @@ header{
 .tin-tuc-main{
     margin: 3rem 5rem;
 }
+
+
+
 .tin-chinh{
+    position: relative;
+    margin-bottom: 1rem;
     img{
         width: 56rem;
         height: 41rem;
-
     }
     .tieu_de{
         position: absolute;
@@ -247,7 +251,7 @@ header{
         background: rgb(0, 0, 0); /* Fallback color */
         background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
         color: $color--white;
-        width: 96%;
+        width: 100%;
         height: 10rem;
         padding: 2rem;
         font-size: 2rem;
@@ -356,9 +360,6 @@ header{
 
 
 
-
-
-
 // Học viên========================================================================================
 .hoc-vien{
     // display: inline;
@@ -398,7 +399,7 @@ header{
 
 
 .san-pham{
-    margin: 3rem 5rem;
+    margin: 3rem;
 }
 .product{
     margin: 3rem;
