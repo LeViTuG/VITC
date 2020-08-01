@@ -221,8 +221,8 @@ header .logo_main .search-box:hover .fa {
   padding-top: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  -ms-grid-columns: (minmax(180px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 2fr));
   -ms-grid-rows: 200px 200px;
       grid-template-rows: 200px 200px;
 }
@@ -278,11 +278,7 @@ header .logo_main .search-box:hover .fa {
 }
 
 .tin-tuc-main {
-  margin: 3rem auto;
-}
-
-.tin-chinh {
-  position: relative;
+  margin: 3rem 5rem;
 }
 
 .tin-chinh img {
@@ -298,7 +294,8 @@ header .logo_main .search-box:hover .fa {
   background: rgba(0, 0, 0, 0.5);
   /* Black background with 0.5 opacity */
   color: #fff;
-  width: 100%;
+  width: 96%;
+  height: 10rem;
   padding: 2rem;
   font-size: 2rem;
   -webkit-transition: .5s all ease-in-out;
@@ -336,10 +333,6 @@ header .logo_main .search-box:hover .fa {
 }
 
 /* Giang vien ================================================================================== */
-.giang-vien {
-  position: static;
-}
-
 .giang-vien .mycontainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,11 +450,6 @@ header .logo_main .search-box:hover .fa {
   transition: .3s all ease-in-out;
 }
 
-.hoc-vien {
-  position: relative;
-  display: inline;
-}
-
 .hoc-vien .story {
   width: 100%;
   height: 30rem;
@@ -498,22 +486,18 @@ header .logo_main .search-box:hover .fa {
 }
 
 .san-pham {
+  margin: 3rem 5rem;
+}
+
+.product {
+  margin: 3rem;
+}
+
+.product .about-picture {
   position: relative;
 }
 
-.about-picture {
-  margin: 3rem auto;
-  position: relative;
-  vertical-align: middle;
-}
-
-@media (max-width: 600px) {
-  .about-picture {
-    margin: 1rem auto;
-  }
-}
-
-.about-picture a {
+.product .about-picture a {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -521,8 +505,8 @@ header .logo_main .search-box:hover .fa {
   left: 0;
 }
 
-.about-picture img {
-  width: 25rem;
+.product .about-picture img {
+  width: 100%;
   height: 15rem;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px 5px rgba(6, 193, 212, 0.8);
@@ -531,28 +515,7 @@ header .logo_main .search-box:hover .fa {
   transition: all .5s;
 }
 
-@media (max-width: 1180px) {
-  .about-picture img {
-    width: 25rem;
-    height: 15rem;
-  }
-}
-
-@media (max-width: 900px) {
-  .about-picture img {
-    width: 40rem;
-    height: 25rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-picture img {
-    width: 20rem;
-    height: 13rem;
-  }
-}
-
-.about-picture .picture-title {
+.product .about-picture .picture-title {
   position: absolute;
   z-index: 99;
   top: 50%;
@@ -567,13 +530,13 @@ header .logo_main .search-box:hover .fa {
   transition: all .5s;
 }
 
-.about-picture:hover .picture-title {
+.product .about-picture:hover .picture-title {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 1;
 }
 
-.about-picture:hover img {
+.product .about-picture:hover img {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-filter: brightness(50%) blur(1px);
